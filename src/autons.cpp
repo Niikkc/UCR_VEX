@@ -244,8 +244,10 @@ void interfered_example() {
 }
 
 void flyAuto(){
+  
+  expansion.move(15);
 
-  chassis.set_drive_pid(10, 25, true);
+  chassis.set_drive_pid(-10, 25, true);
   chassis.wait_drive();
 
   roller.tare_position();
